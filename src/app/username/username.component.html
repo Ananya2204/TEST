@@ -1,0 +1,12 @@
+<div class="container">
+<div class="container-fluid">
+    <h3> USER</h3>
+</div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <a routerLink ="userdetails" class="list-group-item"  *ngFor="let list of username; let i=index" [index]="i">
+            {{list.firstNme}}      {{list.lastName}}   {{list.emailId}}  {{list.phoneNo}}   {{list.dob}}
+        </a>
+    </div>
+</div>
